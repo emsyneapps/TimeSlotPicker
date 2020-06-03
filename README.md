@@ -6,7 +6,7 @@ Gradle:
 ______________
 
 
-allprojects {
+    allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
@@ -16,14 +16,14 @@ allprojects {
   
 Step 2. Add the dependency
 
-dependencies {
+    dependencies {
 	        implementation 'com.github.emsyneapps:TimeSlotPicker:em01'
 	}
   
   Maven:
   _______________
   
-  <repositories>
+        <repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
@@ -32,7 +32,7 @@ dependencies {
   
   Step 2. Add the dependency
   
-  <dependency>
+        <dependency>
 	    <groupId>com.github.emsyneapps</groupId>
 	    <artifactId>TimeSlotPicker</artifactId>
 	    <version>em01</version>
