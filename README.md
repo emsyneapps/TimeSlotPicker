@@ -50,13 +50,11 @@ dependencies {
   
   
   
-  @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+      @Override
+       protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == LAUNCH_SECOND_ACTIVITY) {
             if(resultCode == Activity.RESULT_OK){
-//                String result=data.getStringExtra("result");
                 String date_time = data.getStringExtra("TIME_SELECTED");
                 if (date_time != null) {
                     tvDateTimeSelected.setText(date_time);
