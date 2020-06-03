@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_timegap"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginLeft="7dp"
+    android:background="@android:color/white"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="10dp"
+            tools:targetApi="o"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="8dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="center"
+                android:background="@color/grey"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

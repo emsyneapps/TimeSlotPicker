@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_time_layout"
+        android:layout_width="55dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_line_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/rl_time_layout"
+        android:layout_toRightOf="@+id/rl_time_layout">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/circle_color" />
+
+        <ImageView
+            android:id="@+id/img_round"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/circle_filled_grey" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/schedule_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@+id/rl_line_layout"
+        android:layout_toRightOf="@+id/rl_line_layout"
+        tools:targetApi="o">
+
+        <LinearLayout
+            android:id="@+id/ll_color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:layout_margin="1dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/tv_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pick_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    android:text="Pick this time"
+                    android:textColor="@color/circle_green_color"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
