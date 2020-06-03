@@ -17,7 +17,7 @@ ______________
 Step 2. Add the dependency
 
     dependencies {
-	        implementation 'com.github.emsyneapps:TimeSlotPicker:em01'
+	        implementation 'com.github.emsyneapps:TimeSlotPicker:1.0.0'
 	}
   
   Maven:
